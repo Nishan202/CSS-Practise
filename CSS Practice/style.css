@@ -1,0 +1,350 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.firstDiv {
+width: 100%;
+height: 100vh;
+/*background-color: limegreen;*/
+background-image: url('bgnd.jpg');
+background-attachment: fixed;
+}
+#fontStyle {
+font-family: 'Josefin Sans', sans-serif;
+font-size: 2em;
+font-weight: lighter;
+color: blue;
+letter-spacing: 2px;
+word-spacing: 2px;
+/*direction: ltr;*/
+/*text-indent: 50px;*/
+/*text-align: center;*/
+text-transform: uppercase;
+height: 350px;
+width: 500px;
+border: 1px solid red;
+overflow: scroll;
+/*overflow-x: scroll;
+overflow-y: scroll;*/
+}
+/* unvisited link */
+/*a:link {
+color: red;
+}*/
+/* visited link */
+a:visited{
+color: green;
+}
+/* mouse over link */
+a:hover{
+color: violet;
+}
+/* selected link */
+a:active{
+color: blue;
+}
+/* Posistioning wieht z-index */
+.parent {
+background-color: yellow;
+height: 450px;
+width: 500px;
+position: relative;
+}
+.child1{
+height: 100px;
+width: 100px;
+background-color: green;
+color: #fff;
+position: absolute;
+z-index: 4;
+}
+.child2{
+height: 100px;
+width: 100px;
+background-color: blue;
+color: #fff;
+/*position: absolute;
+right: 0;*/
+position: relative;
+right: 40px;
+bottom: 40px;
+z-index: 3;
+}
+.child3{
+background-color: red;
+color: white;
+height: 100px;
+width: 100px;
+position: absolute;
+/*bottom: 0;*/
+z-index: 2;
+}
+.child4{
+background-color: black;
+color: #fff;
+height: 100px;
+width: 100px;
+position: absolute;
+/*right: 0;
+bottom: 0;*/
+z-index: 1;
+}
+.main-class{
+background-color: lightgreen;
+height: 80px;
+width: 100%;
+cursor: pointer;
+}
+.firstchild-class {
+background-color: violet;
+color: white;
+line-height: 60px;
+width: 30%;
+float: left;
+cursor: wait;
+}
+.secondchild-class {
+background-color: darkblue;
+color: white;
+line-height: 60px;
+float: right;
+width: 70%;
+text-align: center;
+cursor: help;
+}
+.menu {
+display: inline-block;
+padding: 0 10px 0 10px;
+}
+/* ////////////////////// Flex Box /////////////////// */
+.flex-section{
+width: 100%;
+background-color: cyan;
+}
+.all-flex{
+padding: 20px;
+border: 1px solid black;
+/*width: 30%;*/
+flex-basis: 30%;
+/* it works like width */
+}
+.flex-box1{
+/*flex: 1;*/
+background-color: blue;
+}
+.flex-box2{
+/*flex: 2;*/
+background-color: red;
+}
+.flex-box3{
+/*flex: 1;*/
+background-color: green;
+}
+@media(min-width:  540px){
+.flex-section{
+display: flex;
+justify-content: space-between;
+}
+}
+/* Flex wrap */
+.flex-container{
+display: flex;
+flex-wrap: wrap;
+background-color: dodgerblue;
+}
+.flex-container > div {
+background-color: #f1f1f1;
+width: 100px;
+margin: 10px;
+text-align: center;
+/*line-height: 75%;*/
+height: 60px;
+font-size: 30px;
+}
+/* CSS 3 */
+/* text effects */
+.text-effect{
+text-shadow: 2px 4px 2px blue;
+}
+/* word wrap */
+#word-wrap{
+word-wrap: break-word;
+width: 150px;
+border: 1px solid #ff0000;
+}
+#no-wrap{
+width: 150px;
+border: 1px solid #ff0000;
+}
+/* custom font in CSS3 */
+/* @font-face{
+font-family: chainease;
+src: url('KhiaraScript.otf');
+}
+.custom-font{
+font-family: chainease;
+} */
+
+
+@font-face {
+font-family: chainease;
+src: url('Khiarascript.ttf');
+}
+#custom-font {
+font-family: chainease;
+}
+
+
+/* Animation in CSS 3 */
+.car-run{
+width: 100%;
+height: 100px;
+background-color: lightgray;
+position: relative;
+}
+
+.car-run iframe{
+width: 140px;
+height: 100px;
+position: absolute;
+right: 5px;
+/*top: -5px;*/
+animation-name: carrunning;
+animation-duration: 6s;
+animation-timing-function: linear;
+/* for speed of the animation same as starting point */
+animation-iteration-count: infinite;
+/* for keep continue the animation */
+}
+
+@keyframes carrunning{
+/*from{left: 85%}
+to{left: 5%}*/
+from{left: 5%;}
+to{left: 90%;}
+}
+
+
+/* transition and scale in CSS 3 */
+.heart-black {
+margin-left: 30px;
+width: 50px;
+height: 50px;
+transition-property: transform;
+transition-duration: 1s;
+}
+
+/* scale in CSS 3 */
+.heart-black:hover{
+/*width: 70px;
+height: 70px;*/
+transform: scale(2, 2);
+/* scale(2* height of original size, 2* width of original size) */
+}
+
+
+.heart-red {
+margin-left: 70px;
+width: 50px;
+height: 50px;
+transition-property: all;
+transition-duration: 1s;
+}
+.heart-red:hover{
+width: 100px;
+height: 100px;
+}
+
+
+.facebook {
+margin-left: 120px;
+height: 70px;
+width: 95px;
+transition-property: all;
+transition-duration: 1s;
+}
+
+.facebook:hover{
+transform: rotate(360deg);
+}
+
+
+
+/* Multiple columns in CSS 3 */
+
+.multiple-column {
+	margin: 0 150px;
+}
+
+.about-para {
+	column-count: 3;
+	column-gap: 50px;
+	/* for paragraph size equal both side */
+	text-align: justify;
+	/* for border between those column */
+	column-rule: dashed;
+	column-rule-color: blue;
+}
+
+
+
+
+/* Backgrounds in CSS 3 */
+
+.mybg-css {
+	background-image: url('bgnd.jpg');
+	width: 100%; height: 1000px;
+	background-size: 100% 100%;
+}
+
+
+
+/* Border radius and box shadow */
+
+.card {
+	box-shadow: 4px 4px 2px 4px grey;
+}
+
+
+
+/* Box sizing and translate */
+
+.translate {
+	height: 150px;
+	width: 500px;
+	background-color: blue;
+	box-sizing: border-box;
+}
+
+.box-size {
+	/* alternative of padding */
+	transform: translateX(30px);
+	transform: translateY(40px);
+}
+
+
+
+/* Linear Gradient */
+
+.join-gradient {
+
+	/* vertical shade in default */
+	background-image: linear-gradient(red, blue);
+
+	/* for horizontal shade */
+	/*background-image: linear-gradient(to left, #F650FE, #607BF5);*/
+}
+
+
+
+/* flex box in CSS 3 */
+
+.flex-css {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}

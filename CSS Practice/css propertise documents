@@ -1,0 +1,428 @@
+CSS PROPERTIES DOCUMENTS
+
+
+
+------------------------------->
+|          horizontal(x)
+|
+|
+|
+|
+| vertical(y)
+|
+|
+|
+|
+
+
+//////////////////// Background CSS  ///////////////////
+
+// for background image
+
+background-image: url('NS.jpg');
+
+// Not repeate the background image
+
+background-repeate: no-repeate;
+
+// For horizontal repeate background image
+
+background-repeate: repepate-x;
+
+// For vertical repeate background image
+
+background-repeate: repeate-y;
+
+// for center position the background image
+
+background-size: 100% 100%;
+
+// Background-attachment property is used to control the scrolling of an image in the background. ** It is used for paralax website **(that means the background image will be fixed and other content of the web page will be float over the background image)
+
+background-attachment: fixed;
+
+
+
+
+//////////////////////// Fonts CSS //////////////////////
+
+1. The font-family property is used to change the face of a font.
+
+// if you use google fonts then follow the steps
+
+Step1: go to google font web site
+Step2: choose and font and click on + button
+Step3: you will get <link> copy the link tag paste it on you html web page in the <head></head>
+Step4: in CSS file 
+
+2. The font-style property is used to make a font italic or oblique.
+
+// For italic style use
+
+Syntax: font-style: italic;
+
+// It will turn your font in pascal case
+
+Syntax: font-variant: small-caps;
+
+3. The font-variant property is used to create a small caps effect.
+
+4. The font-size property sets the size of the text.
+
+// 1em = 16px, 
+
+5. The font-weight property specifies the weight of a font
+
+// For turn your text bold use
+
+Syntax: font-weight: bold;
+
+
+
+
+
+////////////////////////// Text CSS /////////////////////
+
+The color property is used to set the color of a text 
+
+The Direction property is used to set the text direction.
+Possible values are ltr(left to right) or rtl(right to left).
+
+The letter spacing property is used to add or subtract space between the letters that make up a word.
+
+The word-spacing property is used to add or subtract space between the words of a sentense/
+
+The text-indent property is used to indent the text of a paragraph.
+
+text-align property is used to align the text of a document.
+
+text-transform property is used to turn your text uppercase to lowercase and vice versa.
+
+
+
+////////////////////////// Links CSS ////////////////////
+
+The :link signifies unvisited hyperlinks
+
+The :visited signifies visited hyperlinks
+
+The :hover signifies an element that currently has the user's mouse pointer hovering over it.
+
+The :active signifies an element an element on which the user is currently clicking.
+
+
+
+
+
+///////////////////// Border CSS /////////////////////
+
+The border properties allow you to specify how the border of the box representing an element should look.
+
+The border-color specifies the color of a border
+
+The border-style specifies whether a border should be solid, dashed line, double line, or one of the other possible values.
+
+The border-width specifies the width of a border
+
+Border-radius is bonus... It comes CSS3
+
+
+
+
+/////////////////////// List CSS /////////////////////
+
+The list-style-type allows us to control the shape or appearance of the marker.
+
+list-style-position
+
+
+
+
+
+
+
+//////////////////////// Box Model CSS //////////////////
+
+Content - The content of the box, where text and images appear.
+
+Padding - Clears an area around the content. The padding is transparent
+
+Border - A border that goes around the padding and content.
+
+Margin - Clears and area outside the border. The margin is transparent
+
+
+
+/////////////////////// Scrollbars //////////////////////
+
+Visible- Allows the content to overflow the borders of its containing element.
+
+Hidden - The content of the nested element is simple cut off at the border of the containing element and no scrollbars is visible.
+
+Scroll- The size of the containing element does not change, but the scrollbars are added to allow the user to scroll to the content.
+
+Auto- The purpose is the same as scroll, but the scrollbar will be shown only if the content does overflow.
+
+
+
+
+////////////////////// Positioning CSS //////////////////
+
+Relative - A relative positioned element is positioned relative to its normal position
+
+Absolute - An absolute position element is positioned relative to the first parent element that has a position other than static.
+
+
+
+
+////////////////////// Z-Index /////////////////////////
+
+The z-index property specifies the stack order of an element
+
+An element with greater stack order is always in front of an element with a lower stack order
+
+Note:- z-index only works on positioned elements (position: absolute, position: relative, or position: fixed).
+
+
+
+
+////////////////////// CSS Float //////////////////////
+
+left - The element floats to the left of its container
+
+right - The element floats to the right of its container
+
+
+
+
+//////////////////// CSS Display //////////////////////
+
+The display property is the most important CSS property for controlling layout.
+
+Every HTML element has a default display value depending on what type of element it is.
+
+The default display value for most elements is block, inline and inline-block
+
+// if you use unordered list or ordered list then in this list if you don't want number or bulletins then use CSS property of list-style
+
+Syntax:- list-style: none;
+
+
+
+
+
+////////////////////////// Cursor ///////////////////////
+
+The cursor property of CSS allows you to specify the type of cursor that should be displayed to the user.
+
+<div style="cursor:auto">Auto</div>
+<div style="cursor:crosshair;">Crosshair</div>
+<div style="cursor:default;">Default</div>
+<div style="cursor:pointer;">Pointer</div>
+<div style="cursor:move;">Move</div>
+<div style="cursor:e-resize;">e-resize</div>
+<div style="cursor:ne-resize;">ne-resize</div>
+<div style="cursor:nw-resize;">nw-resize</div>
+<div style="cursor:se-resize;">s-resize</div>
+<div style="cursor:sw-resize">sw-resize</div>
+<div style="cursor:n-resize">n-resize</div>
+<div style="cursor:s-resize;">s-resize</div>
+<div style="cursor:w-resize;">w-resize</div>
+<div style="cursor:text;">text</div>
+<div style="cursor:wait;">wait</div>
+<div style="cursor:help;">help</div>
+
+
+
+
+
+
+///////////////////////// Flex Box /////////////////////
+
+
+The Flexible Box layout module, makes it easier to design flexible responsible layout structure without using float or positioning.
+
+It has property like flex direction, flex basic, flex wrap etc.
+
+// If we use section then it will parent and under the section there will be some div they will be child of the section
+
+so use flex in parent component for align childs horizontaly, it works like display: inline-block
+
+Syntax: display: flex;
+
+Flex property(Grow and shrink):- if you increase flex value then it will increase multiply of other content.
+
+justify-content properties(it uses for only horizontally design):- flex-start, flex-end, center, space-around, space-between
+
+align-items(it uses for vertically design) properties:- flex-start, flex-end, center
+
+Note:- in flex we can use flex-basis intead of width.
+
+For responsive website we can use @media query instead of bootstrap.
+
+Example:- @media(min-width: 540px){
+	section{
+	width: 100%;
+	background-color: cyan;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+}
+
+
+flex-wrap:- It is uses for only responsive site.
+
+
+
+
+
+
+
+
+
+
+
+
+*************************** CSS 3 **********************
+
+
+
+/////////////////// Text Effects in CSS3 ////////////
+
+A CSS3 Text effect is a such term which is used to implement some extra features on normal text.
+
+Their are mainly two properties of CSS3 text effects, which have been described as follows:
+	1. text-shadow - text-shadow is used to create the shadow around the text, we can change the shadow color.
+
+	parameters:- text-shadow: (horizontal offset, vertical offset, blur, color);
+
+	2. word-wrap - word-wrap is used to break the continued text in another line.
+
+	Syntax:- word-wrap: break-word;
+
+
+
+
+//////////////////// Fonts in CSS 3 ////////////////////
+
+With the help of CSS3 fonts feature we can create different types of custom font style.
+
+The font file can found in ttf(True type font) format or otf(Open type font) format.
+
+@font-facr rule you must first define a name for the font (e.g. myFont) and then point to the font file
+
+
+
+
+
+
+/////////////////// Animation in CSS3 //////////////////
+
+An Animation is such a property of CSS3, which is used to animate the object, without using flash or any other animation application.
+
+When the animation is created in the @keyframe, bind it to a selector, otherwise the animation will have no effect.
+
+animation required- Defines the name and duration of the animation. 
+
+keyframes-selector required(for accessing the animation)- Percentage of the animation duration.
+
+Legal values:
+
+0-100
+from{same as 0%}
+to {same as 100%}
+
+
+
+
+
+////////////// Transition Effects in CSS 3 //////////////
+
+A CSS3 transition effect is a such an effect that lets an element gradually change from one style to another style when hover.
+
+There are mainly four properties of CSS3 Transition Effects, which has been described as follows:
+
+1. transition-property
+2. transition-duration
+3. transition-timing-function
+4. transition-delays
+
+
+
+
+////////////// Multiple columns in CSS 3/////////////////
+
+A multiple columns is such an advance feature of CSS3 which is used for creating the newspaper layout. You can create your articles to multiple columns, even if it is in one paragraph.
+
+The three properties of CSS2 Multiple columns have been described as follows: 
+
+1. column-count
+2. column-rule
+3. column gap
+
+
+
+//////////////// Background in CSS 3 ///////////////////
+
+A CSS3 background's is an affords, which is used to resizing of the background properties.
+
+background-size is a such property which is used to fix the size of a background
+
+background-origin
+background-origin: border-box
+background-origin: content-box
+
+
+//////////////////////// Box Shadow ////////////////////
+
+It is basically use for shadow design
+
+parameter of box-shadow : (horizontal , vertical , blur, how much stretch, color);
+
+
+
+
+///////////// User Interface in CSS 3 ///////////////////
+
+
+CSS3 has introduced mainly three types of user interface that has been described as follows:
+
+1. resize - It is basically resize the content like text area.
+
+2. box-sizing: border-box (it is basically use for maintain actual size of the content with padding and border size)
+
+without box sizing:-
+width + padding + border = actual width of an element
+
+height + padding + border = actual height of an element
+
+3. outline-offset
+
+
+
+
+////////////////// 2D Transform in CSS 3 ////////////////
+
+CSS2 2D Transform has introduced mainly five types of methods that has been described as follows:
+
+translate() method- the element moves from its current position, depending on the parameters given for the left(X-asix) and the top (Y-asix) position-->
+
+the rotate() method - the element rotates clockwise at a given degree. Negative values are allowed and rotates the element counter-clockwise.
+
+the scale() method - the element increases or decreases the size, depending on the parameters given for the width(X-axis) and the heigt(Y-axis).
+
+the skew() method - the element turns in a given angle, depending on the parameters given for the horizontal(X-axis) and the vertical(Y-axis) lines.
+
+the matrix() method - combines all of the 2D transform methods into one.
+
+
+Note:- difference between transition and scale is when we use transition-property: all then it will hover all content of div for that reason other divs also effect but when we use in hover transform: scale(2, 2); and in actual content transition-property: transform then will animate only the content not all contents of div and it doesn't effect other divs.
+
+
+
+
+/////////////////////// Linear Gradiant /////////////////
+
+It is a combination of colors for color gradiant like dark to light or light to dark and it can be used in multiple colors.
+
